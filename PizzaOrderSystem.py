@@ -89,7 +89,7 @@ class PizzaOrderSystem():
     def add_csv(self):
 
         # Müşteri verileri ve sipariş edilen pizza tabanı ve sosunun kayıt altına alındığı yer.
-        with open("orders.csv", mode="a", newline="", encoding="utf-8") as dosya: 
+        with open("orders.csv", mode="a", newline="") as dosya: 
             writer = csv.writer(dosya, delimiter=';')
             writer.writerow([self.fis_kayit["Isim"], self.fis_kayit["Soyisim"], 
                              self.fis_kayit["Telefon"],self.fis_kayit["Tc NO"],
